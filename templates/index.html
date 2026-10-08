@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicCraft AI - Story Creator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            resize: none;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        textarea:focus {
+            border-color: #4A90E2;
+        }
+        button {
+            margin-top: 20px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 ComicCraft AI</h1>
+        <p>Enter your story idea below to generate a unique 4-panel comic strip!</p>
+        
+        <form action="/generate" method="post">
+            <textarea name="user_prompt" placeholder="E.g., A brave detective cat solving a mystery in space..." required></textarea>
+            <button type="submit">Generate Comic 🚀</button>
+        </form>
+    </div>
+</body>
+</html>
